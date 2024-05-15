@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Halaman About</title>
-</head>
-<body>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-    
-    <h1>Halaman About</h1>
-</body>
-</html>
+<x-layout>
+    <x-slot:headLine>{{ $headline }}</x-slot:headLine>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit mollitia neque hic quaerat suscipit a ea, error veritatis architecto recusandae adipisci! Cum, sapiente minus ea accusamus illo alias fugit non vel aut vitae? Earum velit at voluptatibus a, suscipit aperiam ullam explicabo libero laudantium dolorum ipsam unde eligendi, distinctio quae quasi delectus obcaecati cum quo veritatis similique? Fugiat, ipsa sequi! Animi recusandae corporis omnis est non, accusantium officiis sed eveniet voluptates porro neque debitis architecto exercitationem, doloribus eos perferendis. Provident impedit voluptatem corrupti obcaecati excepturi voluptates nemo, fugiat ullam ex cupiditate similique magni pariatur, maxime ab fugit soluta libero deleniti saepe dolores nisi in quibusdam iste. Inventore accusamus excepturi est, fugit eaque molestias iste ea natus error esse cum vel libero hic cumque aliquid ratione! Unde saepe rerum, fugit illum recusandae hic magnam iste sequi laborum perspiciatis reiciendis, libero repellendus odio in deleniti quidem maiores minus modi. Nam maxime eveniet itaque quibusdam amet, provident qui tenetur aliquid doloremque at autem omnis suscipit dolorem animi veritatis similique iste ratione ad vitae, asperiores, architecto sit magni odit? Saepe quis pariatur aut nisi. Unde libero voluptate odio impedit quisquam fugiat pariatur eaque inventore fuga doloremque ducimus, dolore commodi veniam laboriosam at. Vel.
+
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repudiandae, voluptas quo molestiae in deserunt numquam eaque asperiores quam fuga sapiente amet ratione animi quisquam nostrum ullam sint vitae ut perferendis distinctio voluptatibus atque. Quae consequatur fugiat corrupti, facere nemo perferendis consequuntur quod
+    </p>
+</x-layout>
