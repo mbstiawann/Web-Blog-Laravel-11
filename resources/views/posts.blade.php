@@ -8,7 +8,7 @@
             </a>
 
             <div class="mt-1 text-base text-gray-500">
-                <a href="#">{{ $post['author'] }} | 1 Januari 2024</a>
+                <a href="#">{{ $post['author'] }} | some time ago...</a>
             </div>
 
             <p class="my-4 font-light">{{ Str::limit($post['body'], 100) }}</p>
