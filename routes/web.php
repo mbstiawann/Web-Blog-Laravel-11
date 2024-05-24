@@ -1,9 +1,10 @@
 <?php
 
 
+use App\Models\Post;
+use App\Models\User;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
-use App\Models\Post;
 
 Route::get('/', function () {
     return view('home', ['headline' => 'Home Page']);
@@ -25,6 +26,14 @@ Route::get('/posts/{post:slug}', function (Post $post) {
     return view('post', [
         'headline' => 'Single Post',
         'post' => $post
+    ]);
+});
+
+Route::get('/authors/{user}', function (User $user) {
+
+    return view('posts', [
+        'headline' => 'Articles by ' . $user->name,
+        'posts' => $user->posts
     ]);
 });
 
