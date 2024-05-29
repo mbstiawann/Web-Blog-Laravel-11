@@ -29,19 +29,19 @@ Route::get('/posts/{post:slug}', function (Post $post) {
     ]);
 });
 
-Route::get('/authors/{user}', function (User $user) {
+Route::get('/authors/{user:username}', function (User $user) {
 
     return view('posts', [
-        'headline' => 'Articles by ' . $user->name,
+        'headline' => count($user->posts) . ' Articles by ' . $user->name,
         'posts' => $user->posts
     ]);
 });
 
-Route::get('/types/{category}', function (Category $category) {
+Route::get('/types/{category:slug}', function (Category $category) {
 
     return view('posts', [
-        'headline' => 'Articles in the ' . $category->category_name . ' category',
-        'posts' => $category->types
+        'headline' => count($category->posts) . ' Articles in the ' . $category->category_name . ' category',
+        'posts' => $category->posts
     ]);
 });
 

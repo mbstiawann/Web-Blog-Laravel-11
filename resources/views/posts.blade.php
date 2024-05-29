@@ -8,8 +8,8 @@
             </a>
 
             <div class="mt-1 text-base text-gray-500">
-                <a href="/authors/{{ $post->author->id }}" class="hover:underline">{{ $post->author->name }}</a> | <a
-                    href="/types/{{ $post->category->id }}"
+                <a href="/authors/{{ $post->author->username }}" class="hover:underline">{{ $post->author->name }}</a> | <a
+                    href="/types/{{ $post->category->slug }}"
                     class="hover:underline">{{ $post->category->category_name }}</a> |
                 {{ $post->created_at->diffForHumans() }}
             </div>

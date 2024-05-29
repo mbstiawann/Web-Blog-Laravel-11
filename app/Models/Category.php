@@ -13,10 +13,10 @@ class Category extends Model
     protected $primary_key= 'id';
     
     protected $fillable = [
-        'category_name'
+        'category_name', 'slug'
     ];
 
-    public function types(): HasMany
+    public function posts(): HasMany
     {
         return $this->hasMany(Post::class, 'category_id');
     }
