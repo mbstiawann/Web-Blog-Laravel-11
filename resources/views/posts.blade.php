@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:headLine>{{ $headline }}</x-slot:headLine>
 
-    <div class="py-4 px-4 mx-auto max-w-screen-xl lg:px-6">
+    <div class="mb-4 py-4 px-4 mx-auto max-w-screen-xl lg:px-6">
         <div class="mx-auto max-w-screen-md sm:text-center">
             <form action="/posts" method="GET">
                 @if (request('category'))
@@ -36,6 +36,8 @@
             </form>
         </div>
     </div>
+
+    {{ $posts->links() }}
 
     <div class="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-0">
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
